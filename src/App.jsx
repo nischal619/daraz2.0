@@ -1,11 +1,22 @@
 import React from "react";
-import ProductCard from "./components/ProductCard";
+import Navbar from "./components/Navbar";
+import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
+
+
+
+const theme = createTheme({
+  palette: {
+    secondary: {
+      main: '#F85606'
+    }
+  }
+});
 
 const App = () => {
   return (
-    <div>
-      <ProductCard />
-    </div>
+    <ThemeProvider theme={theme}>
+      <Navbar />
+    </ThemeProvider>
   );
 };
 
