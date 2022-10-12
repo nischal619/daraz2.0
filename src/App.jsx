@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import ProductCard from "./components/ProductCard";
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 
 
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
+      <ProductCard/>
     </ThemeProvider>
   );
 };
