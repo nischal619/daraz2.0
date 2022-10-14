@@ -12,6 +12,7 @@ import { red } from "@mui/material/colors";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import { ShoppingCart } from "@mui/icons-material";
+import { Typography } from "@mui/material";
 
 export default function ProductCard() {
   return (
@@ -24,13 +25,12 @@ export default function ProductCard() {
         }
         action={
           <IconButton aria-label="settings">
-           <FavoriteIcon color="error" />
+            <FavoriteIcon color="error" />
           </IconButton>
         }
         title="Dhara Health Sun Flower Oil 1L"
         subheader="Nimesh Kirana Store"
-        titleTypographyProps={{variant:'h6',    }}
-
+        titleTypographyProps={{ variant: "h6" }}
       />
       <CardMedia
         component="img"
@@ -38,10 +38,13 @@ export default function ProductCard() {
         image="https://source.unsplash.com/random"
         alt="Paella dish"
       />
-      
+
       <CardActions disableSpacing>
+        <Typography variant="h2" color="initial">
+          Rs. 350.00
+        </Typography>
         <IconButton aria-label="add to favorites">
-          <ShoppingCart fontSize="large" color="primary"/>
+          <ShoppingCart fontSize="large" color="primary" />
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />
