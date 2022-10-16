@@ -10,10 +10,10 @@ import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
   Route
 } from "react-router-dom";
 import HomePage from "./pages/Home.page"
-// import Products from "./components/Products.page"
-// import Login from "./components/Login.page"
-// import Signup from "./components/Signup.page"
-// import { Home } from "@mui/icons-material";
+import Products from "./pages/Products.page"
+import Login from "./pages/Login.page"
+import Signup from "./pages/Signup.page"
+import { Home } from "@mui/icons-material";
 const theme = createTheme({
   palette: {
     secondary: {
@@ -29,9 +29,9 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<HomePage/>}/>
-        {/* <Route exact path="/products" element={<Products/>}/>
+        <Route exact path="/products" element={<Products/>}/>
         <Route exact path="/login" element={<Login/>}/>
-        <Route exact path="/signup" element={<Signup/>}/> */}
+        <Route exact path="/signup" element={<Signup/>}/>
       </Routes>
       <ProductCard/>
     </ThemeProvider>
