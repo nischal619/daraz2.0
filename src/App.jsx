@@ -4,6 +4,7 @@ import ProductCard from "./components/ProductCard";
 import Footer from "./components/Footer";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
  import './App.css'
+import Carousel from "./components/Carousel";
 const theme = createTheme({
   palette: {
     secondary: {
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
+      <Carousel/>
       {/* <ProductCard /> */}
       <Footer />
     </ThemeProvider>
